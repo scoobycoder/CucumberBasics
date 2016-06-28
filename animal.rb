@@ -1,5 +1,3 @@
-# Fill out the 'animal.feature' and 'animal_steps.rb' to test this class
-
 class Animal
   attr_reader :type, :name, :age
 

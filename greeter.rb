@@ -13,9 +13,15 @@ class Greeter
     animal.type == 'cat'
   end
 
+  def dog?
+    animal.type == 'dog'
+  end
+
   def greet
     if cat?
       "Mr Cat"
+    elsif dog?
+      "Mr Dog"
     else
       "We don't know how to greet #{animal.name}"
     end
