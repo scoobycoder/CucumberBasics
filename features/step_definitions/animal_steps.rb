@@ -1,5 +1,10 @@
 Given(/^a "(.*?)"$/) do |animal_type|
-  @animal = Animal.new('Lucy', animal_type, 4)
+
+  if animal_type == 'dog'
+    @animal = Dog.new('Lucy', animal_type, 4)
+  else
+    @animal = Cat.new('Lucy', animal_type, 4)
+  end
 end
 
 When(/^older than (\d+)$/) do |arg1|
