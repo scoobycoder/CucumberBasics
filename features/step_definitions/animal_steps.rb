@@ -12,11 +12,9 @@ When(/^older than (\d+)$/) do |arg1|
 end
 
 When(/^I verify it is a "(.*?)"$/) do |type|
-  greeter = Greeter.new(@animal)
-  expect(greeter.animal.type).to eq type
+  expect(@animal.type).to eq type
 end
 
 Then(/^I should see "(.*?)"$/) do |title|
-  greeter = Greeter.new(@animal)
-  expect(greeter.greet).to eq title
+  expect(@animal.greet).to eq title
 end

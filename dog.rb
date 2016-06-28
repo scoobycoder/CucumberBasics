@@ -4,4 +4,8 @@ class Dog < Animal
     super
   end
 
+  def greet
+    'Mr Dog'
+  end
+
 end

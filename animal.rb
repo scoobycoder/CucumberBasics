@@ -10,4 +10,5 @@ class Animal
   def old?
     age > 3
   end
+
 end
